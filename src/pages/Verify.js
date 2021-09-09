@@ -49,19 +49,9 @@ export default ({
               apiKey={
                 "2b4598cdbb809d8b7a34ba534d76447634ed9a8d58bb498421f72cd8187df048"
               }
-              onFinished={(error, authKey, additionalAttributes) => {}}
-              integrationType={"signup"}
-              additionalAttributes={{
-                customer_user_id: "",
-              }}
-              prefillAttributes={{
-                email: "",
-                country: "",
-              }}
-              theme={{
-                accentColor: "",
-                font: "Arial",
-              }}
+              onFinish={(identityAccessKey) => {}}
+              onError={(errorCode) => {}}
+              onStart={() => {}}
             />
           </MainContent>
         </MainContainer>
